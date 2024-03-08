@@ -1,0 +1,4 @@
+2024-03-04 11:22:36,441 - ERROR - Internal Server Error: /address
+2024-03-04 11:22:36,442 - ERROR - "GET /address HTTP/1.1" 500 108
+2024-03-04 12:04:24,617 - ERROR - Internal Server Error: /address
+2024-03-04 12:04:24,617 - ERROR - "GET /address HTTP/1.1" 500 118

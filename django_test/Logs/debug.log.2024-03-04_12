@@ -1,0 +1,99 @@
+##########inside  fetch_address_with_student#############
+2024-03-04 11:15:35,159 - DEBUG - ##########inside  fetch_address_with_student#############
+2024-03-04 11:22:58,831 - DEBUG - Function : 'fetch_address_with_student' invoked
+2024-03-04 11:22:58,832 - DEBUG - ##########inside  fetch_address_with_student#############
+2024-03-04 11:46:27,249 - DEBUG - HTTP Request GET request to /address
+2024-03-04 11:46:27,250 - DEBUG - Function : 'fetch_address_with_student' invoked
+2024-03-04 11:52:20,538 - DEBUG - HTTP Request GET request to /address
+2024-03-04 11:52:20,539 - DEBUG - Function : 'fetch_address_with_student' invoked
+2024-03-04 11:52:21,616 - DEBUG - HTTP Response: 200
+2024-03-04 11:55:28,322 - DEBUG - HTTP Request GET request to /address
+2024-03-04 11:55:28,323 - DEBUG - Function : 'fetch_address_with_student' invoked
+2024-03-04 11:55:29,189 - DEBUG - SQL Executed : b'SHOW STATEMENT_TIMEOUT'
+2024-03-04 11:55:29,543 - DEBUG - HTTP Response: 200
+2024-03-04 11:59:31,683 - DEBUG - (0.108) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+2024-03-04 11:59:31,795 - DEBUG - (0.105) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+2024-03-04 11:59:38,438 - DEBUG - HTTP Request GET request to /address
+2024-03-04 11:59:38,439 - DEBUG - Function : 'fetch_address_with_student' invoked
+2024-03-04 11:59:39,286 - DEBUG - (0.097) SHOW STATEMENT_TIMEOUT; args=None; alias=default
+2024-03-04 11:59:39,287 - DEBUG - SQL Executed : b'SHOW STATEMENT_TIMEOUT'
+2024-03-04 11:59:39,387 - DEBUG - (0.097) SELECT "Address"."id", "Address"."student_id", "Address"."add_line1", "Address"."city", "Address"."pincode", "Address"."addr_type" FROM "Address" WHERE "Address"."city"::text LIKE '%Mumbai%'; args=('%Mumbai%',); alias=default
+2024-03-04 11:59:39,489 - DEBUG - (0.098) SELECT "Address"."id", "Address"."student_id", "Address"."add_line1", "Address"."city", "Address"."pincode", "Address"."addr_type" FROM "Address" WHERE "Address"."city"::text LIKE '%Mumbai%'; args=('%Mumbai%',); alias=default
+2024-03-04 11:59:39,589 - DEBUG - (0.098) SELECT "Student"."id", "Student"."name", "Student"."email", "Student"."dob", "Student"."roll" FROM "Student" WHERE "Student"."id" IN (10, 29, 12, 28); args=(10, 29, 12, 28); alias=default
+2024-03-04 11:59:39,615 - DEBUG - HTTP Response: 200
+2024-03-04 12:00:33,308 - DEBUG - (0.101) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+2024-03-04 12:00:33,416 - DEBUG - (0.101) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+2024-03-04 12:00:38,818 - DEBUG - HTTP Request GET request to /address
+2024-03-04 12:00:38,818 - DEBUG - Function : 'fetch_address_with_student' invoked
+2024-03-04 12:00:39,702 - DEBUG - (0.110) SELECT "Address"."id", "Address"."student_id", "Address"."add_line1", "Address"."city", "Address"."pincode", "Address"."addr_type" FROM "Address" WHERE "Address"."city"::text LIKE '%Mumbai%'; args=('%Mumbai%',); alias=default
+2024-03-04 12:00:39,814 - DEBUG - (0.106) SELECT "Address"."id", "Address"."student_id", "Address"."add_line1", "Address"."city", "Address"."pincode", "Address"."addr_type" FROM "Address" WHERE "Address"."city"::text LIKE '%Mumbai%'; args=('%Mumbai%',); alias=default
+2024-03-04 12:00:39,924 - DEBUG - (0.110) SELECT "Student"."id", "Student"."name", "Student"."email", "Student"."dob", "Student"."roll" FROM "Student" WHERE "Student"."id" IN (10, 29, 12, 28); args=(10, 29, 12, 28); alias=default
+2024-03-04 12:00:39,948 - DEBUG - HTTP Response: 200
+2024-03-04 12:04:18,812 - DEBUG - (0.097) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+2024-03-04 12:04:18,908 - DEBUG - (0.093) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+2024-03-04 12:04:24,613 - DEBUG - HTTP Request GET request to /address
+2024-03-04 12:04:24,613 - DEBUG - Function : 'fetch_address_with_student' invoked
+2024-03-04 12:04:24,616 - DEBUG - HTTP Response: 500
+2024-03-04 12:04:33,973 - DEBUG - (0.099) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+2024-03-04 12:04:34,070 - DEBUG - (0.095) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+2024-03-04 12:04:35,595 - DEBUG - HTTP Request GET request to /address
+2024-03-04 12:04:35,595 - DEBUG - Function : 'fetch_address_with_student' invoked
+2024-03-04 12:04:36,380 - DEBUG - (0.097) SELECT "Address"."id", "Address"."student_id", "Address"."add_line1", "Address"."city", "Address"."pincode", "Address"."addr_type" FROM "Address" WHERE "Address"."city"::text LIKE '%Mumbai%'; args=('%Mumbai%',); alias=default
+2024-03-04 12:04:36,483 - DEBUG - (0.101) SELECT "Address"."id", "Address"."student_id", "Address"."add_line1", "Address"."city", "Address"."pincode", "Address"."addr_type", "Student"."id", "Student"."name", "Student"."email", "Student"."dob", "Student"."roll" FROM "Address" INNER JOIN "Student" ON ("Address"."student_id" = "Student"."id") WHERE "Address"."city"::text LIKE '%Mumbai%'; args=('%Mumbai%',); alias=default
+2024-03-04 12:04:36,499 - DEBUG - HTTP Response: 200
